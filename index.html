@@ -5,12 +5,245 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/css/output.css"> 
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- box icons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 	<link rel="stylesheet" href="src/css/all.min.css">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--!Change here-->
 	<title>Document</title>  <!--!Change here-->
 </head>
+<body class="font-Poppins scroll-smooth">
+	<!-- ------Header------ -->
+	<header class="bg-img h-screen bg-cover bg-center bg-fixed flex items-center justify-center">
+
+			<!-- -----Mobile menu----- -->
+			<div class="block md:hidden ">
+				<div class="space-y-1 cursor-pointer">
+					<div class="bg-white w-6 h-1 rounded-full"></div>
+					<div class="bg-white w-6 h-1 rounded-full"></div>
+					<div class="bg-white w-6 h-1 rounded-full"></div>
+				</div>
+			</div>
+			<!-- -----Navbar----- -->
+			<nav class="hidden w-full md:block text-sm bg-transparent text-white fixed top-0 pt-4">
+				<div class="container m-auto flex justify-between items-center w-full">
+					<!-- ------Site Name------ -->
+					<h2 class="text-xl font-bold text-white">Portfolio.</h2>
+					<!-- ------lists------ -->
+					<ul class="flex space-x-6">
+						<li class="font-semibold text-port-melon tracking-wider">Home</li>
+						<li class="font-semibold tracking-wider">About us</li>
+						<li class="font-semibold tracking-wider">My Services</li>
+						<li class="font-semibold tracking-wider">Portfolio</li>
+						<li class="font-semibold tracking-wider">Blog</li>
+						<li class="font-semibold tracking-wider">Contact</li>
+					</ul>
+				</div>
+			</nav>			
+		
+		<!-- ------header section------ -->
+		<div class="relative flex flex-col items-center text-center justify-center">
+			<h3 class="text-white text-4xl mb-6">We Love To Code</h3>
+			<h1 class=" text-white text-6xl">We are <span class="font-bold">Web Developers</span></h1>
+		</div>
+		<a href="#about" class="absolute bg-zinc-800/50 rounded-full px-[.7rem] py-1 bottom-8 hover:bg-zinc-800/0 animate-bounce hover:scale-125 duration-200">
+			<i class="fa-solid fa-chevron-down text-white text-xs "></i>
+		</a>
+	</header>
+
+	<!-- ------About Section------ -->
+	<section id="about" class=" my-24">
+		<!-- container -->
+		<h2 class="container m-auto flex text-center justify-center text-4xl font-bold uppercase mb-10">Our Team</h2>
+		<div class="container m-auto flex justify-around">
+			<!-- -----box-1----- -->
+			<div class="basis-2/5">
+				<img src="./imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
+				<!-- -----content----- -->
+				<div class="">
+					<h3 class="mb-14 font-bold text-3xl after:content-[''] after:block after:bg-aft-c after:h-[.08rem] after:w-16 after:mt-2">Şafak Kel</h3>
+					<p class="font-light text-zinc-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quos sunt omnis quisquam similique inventore consequuntur quidem fugit eos pariatur?</p>
+					<!-- ------icons------ -->
+					<div class="mt-10">
+						<a href="https://github.com/Professir" target="_blank"><i class="fa-brands fa-github px-3 py-3 hover:bg-aft-c duration-200"></i>
+						</a>
+						<a href=""><i class="fa-brands fa-twitter px-3 py-3 hover:bg-aft-c duration-200"></i>
+						</a>
+					</div>
+					<!-- -------buttons------ -->
+					<div class="mt-10">
+						<a href="#" class="bg-aft-c px-4 py-3 rounded-md text-zinc-50 ">Download CV</a>
+						<a href="" class="bg-aft-c px-6 py-3 rounded-md text-zinc-50">Contact us</a>
+					</div>
+				</div>
+			</div>
+			<!-- box-2 -->
+			<div class="basis-2/5">
+				<img src="./imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
+				<!-- -----content----- -->
+				<div class="">
+					<h3 class="mb-14 font-bold text-3xl after:content-[''] after:block after:bg-aft-c after:h-[.08rem] after:w-16 after:mt-2">Miron Khoruzhenko</h3>
+					<p class="font-light text-zinc-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quos sunt omnis quisquam similique inventore consequuntur quidem fugit eos pariatur?</p>
+					<!-- ------icons------ -->
+					<div class="mt-10">
+						<a href="https://github.com/miron-khoruzhenko" target="_blank"><i class="fa-brands fa-github px-3 py-3 hover:bg-aft-c duration-200"></i>
+						</a>
+						<a href=""><i class="fa-brands fa-twitter px-3 py-3 hover:bg-aft-c duration-200"></i>
+						</a>
+					</div>
+					<!-- -------buttons------ -->
+					<div class="mt-10">
+						<a href="#" class="bg-aft-c px-4 py-3 rounded-md text-zinc-50 ">Download CV</a>
+						<a href="" class="bg-aft-c px-6 py-3 rounded-md text-zinc-50">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- -----Skills Section----- -->
+	<section class="my-24 bg-zinc-700 h-128">
+		<!-- -----content------ -->
+		<div class="container m-auto pt-10">
+			<span class="text-aft-c text-2xl ml-[4.5rem]"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+			<h3 class="relative text-2xl text-zinc-50 ml-[4.5rem] before:content-[''] before:block before:bg-[#FFFFFF1A] before:h-px before:w-48 before:absolute before:-bottom-3 after:content-[''] after:block after:bg-aft-c after:h-px after:w-24 after:absolute after:-bottom-3">Our Skills</h3>
+			<!-- skills box -->
+			<div class="flex justify-around">
+				<!-- Left-skills -->
+				<div class="mt-10 basis-2/5">
+					<!-- -----skill-1----- -->
+					<div class="mb-12">
+						<h6 class=" text-zinc-50 flex justify-between mb-2">Web Development <span class="px-2 py-px bg-[#5050504D] text-xs"><sub>90%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani1 bg-aft-c w-[90%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-2----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Responsive Design<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>80%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani2 bg-aft-c w-[80%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-3----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Mobile-Friendly Design<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>82%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani3 bg-aft-c w-[82%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-4----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Search Engine Optimization (SEO)<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>74%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani4 bg-aft-c w-[74%] h-1 absolute"></span>
+						</div>
+					</div>
+				</div>
+				<!-- Right skills -->
+				<div class="mt-10 basis-2/5">
+					<!-- -----skill-1----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Fast Load Times<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>80%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani5 bg-aft-c w-[80%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-2----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Clear Calls-to-Action<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>75%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani6 bg-aft-c w-[75%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-3----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">UI/UX Developer<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>80%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani7 bg-aft-c w-[80%] h-1 absolute"></span>
+						</div>
+					</div>
+					<!-- -----skill-4----- -->
+					<div class="mb-12">
+						<h6 class="text-zinc-50 flex justify-between mb-2">Ensure Security<span class="px-2 py-px bg-[#5050504D] text-xs"><sub>85%</sub></span></h6>
+						<div class="w-full h-1 bg-skil-bg relative">
+							<span class="animate-wid-ani8 bg-aft-c w-[85%] h-1 absolute"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- -----Services Section----- -->
+	<section class="h-128">
+		<!-- -----content----- -->
+		<div class="container m-auto flex flex-col justify-center items-center">
+			<h5 class="relative text-4xl mb-24 font-semibold text-[#333333] before:content-[''] before:absolute before:-bottom-4 before:bg-[#0101010D] before:w-full before:h-px
+			after:content-[''] after:absolute after:-bottom-4 after:bg-aft-c after:h-px after:w-16 after:right-20">Our Services</h5>
+			<!-- ------grid-boxes------ -->
+			<div class="grid grid-cols-3">
+				<!-- box-1 -->
+				<div class="col-span-1 border-r-[1px]">
+					<div class="text-center py-10 px-4">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-layers"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Development</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+				<!-- box-2 -->
+				<div class="col-span-1 border-r-[1px]">
+					<div class="text-center py-10 px-4">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-mobile"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Fully Responsive</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+				<!-- box-3 -->
+				<div class="col-span-1 border-r-[1px]">
+					<div class="text-center py-10 px-4">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-gears"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Custom Support</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+				<!-- box-4 -->
+				<div class="col-span-1 border-r-[1px] border-spacing-3 mt-3 px-4">
+					<div class="text-center py-10 px-4 border-t-[1px]">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-gears"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Custom Support</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+				<!-- box-5 -->
+				<div class="col-span-1 border-r-[1px] border-spacing-3 mt-3 px-4">
+					<div class="text-center py-10 px-4 border-t-[1px]">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Clean Code</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+				<!-- box-6 -->
+				<div class="col-span-1  border-spacing-3  mt-3 px-4">
+					<div class="text-center py-10 px-4 border-t-[1px]">
+						<span class="flex justify-center text-4xl text-aft-c mb-5"><i class="icon icon-gears"></i></span>
+						<h6 class="text-box-c font-medium text-xl mb-4">Custom Support</h6>
+						<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ratione.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<script src="main.js"></script>  <!--!Change here-->
 <body>
 
 <div class="bg-white py-14">
