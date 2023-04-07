@@ -8,7 +8,14 @@ module.exports = {
       lg  : '976px',
       xl  : '1440px'
     },
-    extend: {},
+    extend: {
+      colors : {
+        'gold' : '#c49b66'
+      },
+      backgroundImage : {
+        'footer-bg' : 'linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b5.jpg)'
+      }
+    },
   },
   plugins: [],
 }
