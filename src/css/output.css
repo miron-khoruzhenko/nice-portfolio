@@ -1033,11 +1033,15 @@ video {
   background-image: url('../../imgs/me.jpeg');
 }
 
+.bg-skills {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b4.jpg);
+}
+
 .bg-count-bg {
   background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../imgs/b3.jpg);
 }
 
-.bg-footer-bg {
+.bg-footer {
   background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b5.jpg);
 }
 
@@ -1051,6 +1055,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-4 {
