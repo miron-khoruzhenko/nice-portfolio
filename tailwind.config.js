@@ -18,10 +18,10 @@ module.exports = {
     },
     extend: {
       backgroundImage : {
+        'count': 'linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../imgs/b3.jpg)',
         'skills' : 'linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b4.jpg)',
         'footer' : 'linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b5.jpg)',
-        'img' : "url('../../imgs/me.jpeg')",
-        'count-bg': 'linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../imgs/b3.jpg)',
+        'img' : "linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../imgs/me.jpeg')",
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
@@ -50,6 +50,11 @@ module.exports = {
         'wid-ani7': 'ToRight7 1.5s ease-in-out',
         'wid-ani8': 'ToRight8 1.5s ease-in-out',
       },
+      transitionProperty: {
+        'width' : "width, max-width",
+        'moveIn' : 'opacity, transform'
+      },
+      
     },
   },
 }
