@@ -17,13 +17,10 @@ module.exports = {
       xl  : '1440px'
     },
     extend: {
-      colors : {
-        'gold' : '#c49b66',
-        'port-melon': '#ffb500',
-      },
       backgroundImage : {
         'footer-bg' : 'linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b5.jpg)',
         'img' : "url('../../imgs/me.jpeg')",
+        'count-bg': 'linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../imgs/b3.jpg)',
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
@@ -36,9 +33,11 @@ module.exports = {
         '156': '40rem',
       },
       colors: {
-        'aft-c': '#C49B66',
         'skil-bg': 'rgba(80, 80, 80, 0.3)',
         'box-c' : '#333333',
+        'gold' : '#c49b66',
+        'port-melon': '#ffb500',
+        'coun-c': '#BBBBBB'
       },
       animation: {
         'wid-ani1': 'ToRight1 1.5s ease-in-out',
