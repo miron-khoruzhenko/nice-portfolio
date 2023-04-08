@@ -18,8 +18,6 @@ module.exports = {
     },
     extend: {
       colors : {
-        'gold' : '#c49b66',
-        'port-melon': '#ffb500',
       },
       backgroundImage : {
         'footer-bg' : 'linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../imgs/b5.jpg)',
@@ -36,9 +34,10 @@ module.exports = {
         '156': '40rem',
       },
       colors: {
-        'aft-c': '#C49B66',
         'skil-bg': 'rgba(80, 80, 80, 0.3)',
         'box-c' : '#333333',
+        'port-melon': '#ffb500',
+        'gold' : '#c49b66',
       },
       animation: {
         'wid-ani1': 'ToRight1 1.5s ease-in-out',
