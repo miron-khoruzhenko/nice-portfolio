@@ -38,7 +38,8 @@ module.exports = {
         'box-c' : '#333333',
         'gold' : '#c49b66',
         'port-melon': '#ffb500',
-        'coun-c': '#BBBBBB'
+        'coun-c': '#BBBBBB',
+        'bord-c': 'rgba(221, 200, 228, 1)',
       },
       animation: {
         'wid-ani1': 'ToRight1 1.5s ease-in-out',
