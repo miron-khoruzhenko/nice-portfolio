@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- * Meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- * CSS -->
 	<link rel="stylesheet" href="src/css/output.css"> 
-	<!-- fonts -->
+
+	<!-- * Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<!-- * Icons -->
+	<link rel="stylesheet" href="./src/icons/icons.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- box icons -->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-	<link rel="stylesheet" href="src/css/all.min.css">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--!Change here-->
+
 	<title>Document</title>  <!--!Change here-->
 </head>
 <body class="font-Poppins scroll-smooth">
@@ -266,12 +273,43 @@
 			</div>
 		</div>
 	</section>
+	<!-- Testimonials -->
+	<section class="bg-black py-20">
+		<div class="flex flex-col justify-center items-center container mx-auto text-center">
+			<i class="icon-quote text-white text-4xl mb-4" ></i>
+			<h2
+			class="text-center text-4xl text-white font-semibold mb-14 relative
+			after:content-[''] after:block after:h-px after:w-12 after:bg-gold
+			after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-4
+			before:content-[''] before:block before:h-px before:w-40 before:bg-neutral-600
+			before:absolute before:left-1/2 before:-translate-x-1/2 before:-bottom-4">
+			Testimonials
+			</h2>
+			<p class="text-neutral-400 font-light mb-8">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis iure temporibus minus dolor placeat maiores sapiente dolorum dicta harum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, neque.
+			</p>
+			<div class="text-white flex justify-center items-center w-full gap-5">
+				<span class="block w-full text-sm text-right">
+					Alex Smith
+				</span>
+				<span class="">|</span>
+				<span class="block w-full text-sm text-left">Envato Author</span>
+			</div>
+		</div>
+
+		<div class="flex justify-center gap-2 mt-8">
+			<span class="w-2 h-2 inline-block rounded-full bg-neutral-600 hover:bg-gold cursor-pointer transition-colors"></span>
+			<span class="w-2 h-2 inline-block rounded-full bg-neutral-600 hover:bg-gold cursor-pointer transition-colors"></span>
+			<span class="w-2 h-2 inline-block rounded-full bg-neutral-600 hover:bg-gold cursor-pointer transition-colors"></span>
+		</div>
+
+	<!-- -----MyBlog----- -->	</section>
 	
-	<!-- -----MyBlog----- -->
-	<div class="bg-white py-14 my-24">
+	<!-- My Blog  -->
+	<section class="bg-white py-28 border my-24">
 		<div class="container mx-auto">
 			<h2
-			class="text-center text-4xl text-zinc-900 font-semibold mb-14 relative
+			class="text-center text-4xl text-zinc-900 font-semibold mb-24 relative
 			after:content-[''] after:block after:h-px after:w-12 after:bg-gold
 			after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-4
 			before:content-[''] before:block before:h-px before:w-40 before:bg-neutral-200
@@ -317,12 +355,18 @@
 
 			</div>
 
+			<div class="flex justify-center gap-2 mt-12">
+				<span class="w-2 h-2 inline-block rounded-full bg-neutral-300 hover:bg-gold cursor-pointer transition-colors"></span>
+				<span class="w-2 h-2 inline-block rounded-full bg-neutral-300 hover:bg-gold cursor-pointer transition-colors"></span>
+				<span class="w-2 h-2 inline-block rounded-full bg-neutral-300 hover:bg-gold cursor-pointer transition-colors"></span>
+			</div>
+
 		</div>
-	</div>
+	</section>
 
 		
-		<!--* Contact Form -->
-		<div class="bg-neutral-800/90 bg-footer-bg py-14">
+	<!--* Contact Form -->
+	<section class="bg-neutral-800/90 bg-footer-bg bg-fixed py-14">
 		<div class="container mx-auto">
 			<h2
 			class="text-center text-4xl text-white font-semibold mb-14 relative
@@ -351,21 +395,21 @@
 
 			<ul class="flex flex-wrap justify-between mt-16 mb-2 md:flex-nowrap">
 				<li class="text-gold flex justify-center items-center">
-					<i class="fa-solid fa-mobile-screen fa-2x" ></i>
+					<i class="icon icon-mobile text-3xl" ></i>
 					<div class="text-white text-xs mx-3 pl-3 border-l border-neutral-500 ">
 						<h4 class="font-bold mb-1">Phone</h4>
 						<span class="font-light text-neutral-200">+90 546 438 9457</span>
 					</div>
 				</li>
 				<li class="text-gold flex justify-center items-center">
-					<i class="fa-solid fa-mobile-screen fa-2x" ></i>
+					<i class="icon-envelope text-3xl" ></i>
 					<div class="text-white text-xs mx-3 pl-3 border-l border-neutral-500 ">
 						<h4 class="font-bold mb-1">Email</h4>
 						<span class="font-light text-neutral-200">mironkhoruzhenko@gmail.com</span>
 					</div>
 				</li>
 				<li class="text-gold flex justify-center items-center">
-					<i class="fa-solid fa-mobile-screen fa-2x" ></i>
+					<i class="icon-map-pin text-3xl" ></i>
 					<div class="text-white text-xs mx-3 pl-3 border-l border-neutral-500 ">
 						<h4 class="font-bold mb-1">Adress</h4>
 						<span class="font-light text-neutral-200">3481 Melrose Place, Los Angeles</span>
@@ -374,7 +418,7 @@
 			</ul>
 
 		</div>
-	</div>
+	</section>
 
 	<footer class="w-full py-14 block bg-neutral-900 text-zinc-400 text-center text-xs">	
 		Copyright © And Made With Love All Rights Reserved.
