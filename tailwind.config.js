@@ -55,7 +55,15 @@ module.exports = {
         'width' : "width, max-width",
         'moveIn' : 'opacity, transform'
       },
-      
+      boxShadow: {
+        'btn-shad': '0 0 10px rgba(0, 0, 0, 0.2)',
+      },
+      height: {
+        'btnvalue': "calc('100% - 15px')",        
+      },
+      width: {
+        'btnvalue': "calc('100% - 15px')", 
+      },
     },
   },
 }

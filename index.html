@@ -22,14 +22,14 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--!Change here-->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> !Change here -->
 
 	<title>Document</title>  <!--!Change here-->
 </head>
-<body class="font-Poppins scroll-smooth">
+<body class="font-Poppins">
 
 	<!-- * Header -->
-	<header class="bg-img h-screen bg-cover bg-center bg-fixed flex justify-center">
+	<header id="home" class="bg-img h-screen bg-cover bg-center bg-fixed flex justify-center">
 		<!-- -----Mobile menu----- -->
 		<div class="md:hidden fixed ">
 				<div class="space-y-1 cursor-pointer">
@@ -39,36 +39,38 @@
 				</div>
 			</div>
 			<!-- -----second Navbar----- -->
-			<nav id="navbar" class="hidden w-full 
+			<nav id="navbar" class="hidden w-full opacity-0
 			md:block text-sm bg-white text-black fixed top-0 py-4 z-50">
 				<div class="container m-auto flex justify-between items-center w-full">
 					<!-- ------Site Name------ -->
 					<h2 class="text-xl font-bold">Portfolio.</h2>
 					<!-- ------lists------ -->
 					<ul class="flex space-x-6">
-						<li class="font-semibold text-port-melon tracking-wider">Home</li>
-						<li class="font-semibold tracking-wider">About us</li>
-						<li class="font-semibold tracking-wider">My Services</li>
-						<li class="font-semibold tracking-wider">Portfolio</li>
-						<li class="font-semibold tracking-wider">Blog</li>
-						<li class="font-semibold tracking-wider">Contact</li>
+						<li class="font-semibold text-port-melon tracking-wider"><a href="#home">Home</a></li>
+						<li class="font-semibold tracking-wider cursor-pointer"><a href="#about">About us</a></li>
+						<li class="font-semibold tracking-wider"><a href="#services">My Services</a></li>
+						<li class="font-semibold tracking-wider"><a href="#portfolio">Portfolio</a></li>
+						<li class="font-semibold tracking-wider"><a href="#testimonials">Testimonials</a></li>
+						<li class="font-semibold tracking-wider"><a href="#blog">Blog</a></li>
+						<li class="font-semibold tracking-wider"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
 			<!-- first navbar -->
 			<nav id="navbar1" class="hidden w-full 
-			md:block text-sm bg-transparent text-white fixed top-0 py-4 ">
+			md:block text-sm bg-transparent text-white fixed top-0 py-4 z-50">
 				<div class="container m-auto flex justify-between items-center w-full">
 					<!-- ------Site Name------ -->
 					<h2 class="text-xl font-bold">Portfolio.</h2>
 					<!-- ------lists------ -->
 					<ul class="flex space-x-6">
-						<li class="font-semibold text-port-melon tracking-wider">Home</li>
-						<li class="font-semibold tracking-wider">About us</li>
-						<li class="font-semibold tracking-wider">My Services</li>
-						<li class="font-semibold tracking-wider">Portfolio</li>
-						<li class="font-semibold tracking-wider">Blog</li>
-						<li class="font-semibold tracking-wider">Contact</li>
+						<li class="font-semibold text-port-melon tracking-wider"><a href="#home">Home</a></li>
+						<li class="font-semibold tracking-wider"><a href="#about">About us</a></li>
+						<li class="font-semibold tracking-wider"><a href="#services">My Services</a></li>
+						<li class="font-semibold tracking-wider"><a href="#portfolio">Portfolio</a></li>
+						<li class="font-semibold tracking-wider"><a href="#testimonials">Testimonials</a></li>
+						<li class="font-semibold tracking-wider"><a href="#blog">Blog</a></li>
+						<li class="font-semibold tracking-wider"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>			
@@ -78,18 +80,18 @@
 			<h3 class="text-white text-2xl md:text-4xl mb-2 md:mb-6">We Love To Code</h3>
 			<h1 class=" text-white text-3xl md:text-6xl">We are <span class="font-bold">Web Developers</span></h1>
 		</div>
-		<a href="#about" class="absolute bg-zinc-800/50 rounded-full px-[.6rem] py-[.2rem] bottom-8 hover:bg-zinc-800/0 animate-bounce hover:scale-125 duration-200">
-			<i class="fa-solid fa-chevron-down text-white text-xs "></i>
+		<a href="#about" id="myButton" class="absolute bg-zinc-800/50 rounded-full px-[.6rem] py-[.2rem] bottom-8 hover:bg-zinc-800/0 animate-bounce hover:scale-125 duration-200">
+			<i class="fa-solid fa-chevron-down text-white text-xs"></i>
 		</a>
 	</header>
 
 	<!-- * About Section -->
-	<section id="about" class=" my-24">
+	<section id="about" class=" py-24">
 		<!-- container -->
 		<h2 class="container m-auto flex  text-center justify-center text-4xl font-bold uppercase mb-10">Our Team</h2>
 		<div class="container m-auto flex flex-col md:flex-row justify-around">
 			<!-- -----box-1----- -->
-			<div class="basis-2/5">
+			<div class="basis-2/6">
 				<img src="./src/imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
 				<!-- -----content----- -->
 				<div class="">
@@ -110,7 +112,7 @@
 				</div>
 			</div>
 			<!-- box-2 -->
-			<div class="basis-2/5">
+			<div class="basis-2/6">
 				<img src="./src/imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
 				<!-- -----content----- -->
 				<div class="">
@@ -212,7 +214,7 @@
 
 
 	<!-- * Services Section -->
-	<section class="my-24">
+	<section id="services" class="py-24">
 		<!-- -----content----- -->
 		<div class="container m-auto flex flex-col justify-center items-center">
 			<h5 class="relative text-4xl mb-24 font-semibold text-[#333333] before:content-[''] before:absolute before:-bottom-4 before:bg-[#0101010D] before:w-full before:h-px
@@ -301,7 +303,7 @@
 
 
 	<!-- Our Portfolio  -->
-	<section class="bg-white py-28 my-1">
+	<section id="portfolio" class="bg-white py-28 my-1">
 		<div class="container mx-auto">
 			<h2
 			class="text-center text-4xl text-zinc-900 font-semibold mb-20 relative
@@ -447,7 +449,7 @@
 
 
 	<!-- Testimonials -->
-	<section class="bg-black py-20">
+	<section id="testimonials" class="bg-black py-20">
 		<div class="flex flex-col justify-center items-center container mx-auto text-center">
 			<i class="icon-quote text-white text-4xl mb-4" ></i>
 			<h2
@@ -478,8 +480,8 @@
 
 	</section>
 	
-	<!-- My Blog  -->
-	<!-- <section class="bg-white py-28 my-24">
+	<!-- My Blog   -->
+	<section id="blog" class="bg-white py-28 my-24">
 		<div class="container mx-auto">
 			<h2
 			class="text-center text-4xl text-zinc-900 font-semibold mb-24 relative
@@ -535,12 +537,12 @@
 			</div>
 
 		</div>
-	</section> -->
+	</section>
 
 
 
 	<!--* Contact Form -->
-	<section class="bg-neutral-800/90 bg-footer bg-no-repeat bg-center bg-cover bg-fixed py-14">
+	<section id="contact" class="bg-neutral-800/90 bg-footer bg-no-repeat bg-center bg-cover bg-fixed py-14">
 		<div class="container mx-auto">
 			<h2
 			class="text-center text-4xl text-white font-semibold mb-14 relative
@@ -598,7 +600,15 @@
 		Copyright © And Made With Love All Rights Reserved.
 	</footer>
 
-	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<!-- Turn to top Button -->
+	<button id="myBtn" class="fixed bottom-5 right-7 
+	px-2 py-2 hidden 
+	place-items-center rounded-full 
+	shadow-btn-shad cursor-pointer"><span id="myBtn-value" class="grid h-btnvalue w-btnvalue bg-zinc-50 
+	rounded-full place-items-center px-3 py-2 
+	text-xl text-gold"><i class="fa-solid fa-arrow-up-long"></i></span></button>
+	
+	
 	<script src="main.js"></script>  <!--!Change here-->
 </body>
 </html>
