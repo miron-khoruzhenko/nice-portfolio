@@ -85,6 +85,8 @@
 		</a>
 	</header>
 
+
+
 	<!-- * About Section -->
 	<section id="about" class=" py-24">
 		<!-- container -->
@@ -92,7 +94,11 @@
 		<div class="container m-auto flex flex-col md:flex-row justify-around">
 			<!-- -----box-1----- -->
 			<div class="basis-2/6">
-				<img src="./src/imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
+				<div id="imgbox1" class=" group relative 
+				before:bg-gold before:w-full before:absolute before:left-8 before:right-1 before:top-4 before:-bottom-4 before:h-full before:-z-10 hover:before:-translate-y-9 before:block before:duration-[.5s] before:opacity-0 before:hover:opacity-100 before:hover:-translate-x-9">
+					<img src="./src/imgs/monkey-avatar.jpg" class="mb-10 group-hover:translate-x-4 duration-[.3s]
+					">
+				</div>
 				<!-- -----content----- -->
 				<div class="">
 					<h3 class="mb-14 font-bold text-3xl after:content-[''] after:block after:bg-gold after:h-[.08rem] after:w-16 after:mt-2">Şafak Kel</h3>
@@ -113,7 +119,11 @@
 			</div>
 			<!-- box-2 -->
 			<div class="basis-2/6">
-				<img src="./src/imgs/monkey-avatar.jpg" class="rounded-md mb-10 ">
+				<div id="imgbox1" class=" group relative
+				before:bg-gold before:w-full before:absolute before:left-8 before:right-1 before:top-4 before:-bottom-4 before:h-full before:-z-10 hover:before:-translate-y-9 before:block before:duration-[.5s] before:opacity-0 before:hover:opacity-100 before:hover:-translate-x-9">
+					<img src="./src/imgs/monkey-avatar.jpg" class="mb-10 group-hover:translate-x-4 duration-[.3s]
+					">
+				</div>
 				<!-- -----content----- -->
 				<div class="">
 					<h3 class="mb-14 font-bold text-3xl after:content-[''] after:block after:bg-gold after:h-[.08rem] after:w-16 after:mt-2">Miron Khoruzhenko</h3>
@@ -480,6 +490,8 @@
 
 	</section>
 	
+
+
 	<!-- My Blog   -->
 	<section id="blog" class="bg-white py-28 my-24">
 		<div class="container mx-auto">
@@ -596,9 +608,13 @@
 		</div>
 	</section>
 
+
+
 	<footer class="w-full py-14 block bg-neutral-900 text-zinc-400 text-center text-xs">	
 		Copyright © And Made With Love All Rights Reserved.
 	</footer>
+
+
 
 	<!-- Turn to top Button -->
 	<button id="myBtn" class="fixed bottom-5 right-7 
