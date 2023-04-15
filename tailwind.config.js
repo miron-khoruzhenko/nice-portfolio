@@ -64,6 +64,7 @@ module.exports = {
       width: {
         'btnvalue': "calc('100% - 15px')", 
       },
+      
     },
   },
 }

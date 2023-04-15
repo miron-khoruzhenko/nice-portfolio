@@ -78,6 +78,16 @@ html {
         max-width: 85%;
     }
 }
+@keyframes hide {
+    100%{
+        max-width: 0;
+    }
+}
 #navbar, #navbar1 {
     transition: top .5s;
+}
+
+.activeBtn{
+    background-color: #c49b66;
+    color: white;
 }

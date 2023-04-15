@@ -85,7 +85,6 @@
 		</a>
 	</header>
 
-	<a href=""></a>
 
 
 	<!-- * About Section -->
@@ -325,38 +324,40 @@
 				Our Portfolio
 			</h2>
 
-			<ul class="flex justify-center space-x-4 mb-12 text-neutral-500 text-xs font-semibold">
-				<li class="">
-					<button class="border border-zinc-200 rounded-md 
+			<ul class="flex justify-center space-x-4 mb-12 text-neutral-500 text-xs font-semibold" id="portfolio-btns">
+				<li class="" >
+					<button data-filter="*" class="border border-zinc-200 rounded-md 
 					px-6 py-2 cursor-pointer 
 					hover:bg-gold hover:text-white transition-colors">All</button>
 				</li>
-				<li class="">
-					<button class="border border-zinc-200 rounded-md 
+				<li class="" >
+					<button data-filter=".brand" class="border border-zinc-200 rounded-md 
 					px-6 py-2 cursor-pointer 
 					hover:bg-gold hover:text-white transition-colors">Brand</button>
 				</li>
-				<li class="">
-					<button class="border border-zinc-200 rounded-md 
+				<li class="" >
+					<button data-filter=".design" class="border border-zinc-200 rounded-md 
 					px-6 py-2 cursor-pointer 
 					hover:bg-gold hover:text-white transition-colors">Design</button>
 				</li>
-				<li class="">
-					<button class="border border-zinc-200 rounded-md 
+				<li class="" >
+					<button data-filter=".graphic" class="border border-zinc-200 rounded-md 
 					px-6 py-2 cursor-pointer 
 					hover:bg-gold hover:text-white transition-colors">Graphic</button>
 				</li>
 			</ul>
 
-			<div class="flex justify-center items-center gap-8">
-				<div class="flex flex-col gap-8">
-					<div class="relative">
+			<div class="flex justify-center items-center gap-8 grid-item w-full">
+				<div class="flex flex-col gap-8 relative">
+
+					<!-- * Item 1 -->
+					<div class="relative graphic item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
 						before:block before:bg-white before:transition-width before:duration-500 before:max-w-0
 						before:absolute before:left-0 before:bottom-1/2 before:top-0 before:w-full
-	
+
 						after:block after:bg-white after:transition-width after:duration-500 after:max-w-0
 						after:absolute  after:right-0 after:top-1/2 after:bottom-0 after:w-full">
 							<h6 class="z-10 text-gold text-xs font-semibold mb-2
@@ -367,7 +368,8 @@
 						</div>
 						<img src="./src/imgs/portfolio/1.jpeg" alt="" class="" ></div>
 
-					<div class="relative">
+					<!-- * Item 2 -->
+					<div class="relative brand item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
@@ -384,8 +386,9 @@
 						</div>
 						<img src="./src/imgs/portfolio/5.jpg" alt="" class=""></div>
 				</div>
-				<div class="flex flex-col gap-8">
-					<div class="relative">
+				<div class="flex flex-col gap-8 relative">
+					<!-- * Item 3 -->
+					<div class="relative design item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
@@ -401,7 +404,9 @@
 							<span class="fas fa-eye text-gold absolute bottom-2 right-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 duration-500"></span>
 						</div>
 						<img src="./src/imgs/portfolio/2.jpg" alt="" class=""></div>
-					<div class="relative">
+
+					<!-- * Item 4 -->
+					<div class="relative design item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
@@ -418,8 +423,10 @@
 						</div>
 						<img src="./src/imgs/portfolio/4.jpg" alt="" class=""></div>
 				</div>
-				<div class="flex flex-col gap-8">
-					<div class="relative">
+				<div class="flex flex-col gap-8 relative">
+
+					<!-- * Item 5 -->
+					<div class="relative graphic item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
@@ -435,7 +442,9 @@
 							<span class="fas fa-eye text-gold absolute bottom-2 right-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 duration-500"></span>
 						</div>
 						<img src="./src/imgs/portfolio/3.jpg" alt="" class=""></div>
-					<div class="relative">
+
+					<!-- * Item 6 -->
+					<div class="relative brand item w-1/3 mx-2 mb-2" data-portfolio-item>
 						<div class="hover:before:max-w-full hover:after:max-w-full group
 						absolute top-1 bottom-1 right-1 left-1 flex flex-col justify-center items-center
 
@@ -453,6 +462,8 @@
 						<img src="./src/imgs/portfolio/6.jpg" alt="" class=""></div>
 				</div>
 			</div>
+
+			
 
 		</div>
 	</section>
@@ -625,7 +636,8 @@
 	rounded-full place-items-center px-3 py-2 
 	text-xl text-gold"><i class="fa-solid fa-arrow-up-long"></i></span></button>
 	
-	
+
+	<script src="./src/js/isotope.min.js"></script>
 	<script src="main.js"></script>  <!--!Change here-->
 </body>
 </html>
