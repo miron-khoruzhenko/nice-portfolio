@@ -1,6 +1,6 @@
 "use strict";
 
-const navbar = document.querySelector('#navbar');
+const navbar  = document.querySelector('#navbar');
 const navbar1 = document.querySelector('#navbar1');
 const myBtn = document.querySelector('#myBtn');
 const myBtnValue = document.querySelector('#myBtn-value');
@@ -19,8 +19,8 @@ function scrollFunction() {
       navbar.style.top = "-100px";
       navbar1.style.top = "0";
 }
-
 }
+scrollFunction()
 
 // For smooth scroll button 
 let calcScrollValue = () => {
