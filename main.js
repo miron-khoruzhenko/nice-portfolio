@@ -45,27 +45,29 @@ window.onload = calcScrollValue;
 
 
 // const items = document.querySelectorAll('[data-portfolio-item]');
-const grid = document.querySelector('.grid-item');
-const buttons = document.querySelectorAll('#portfolio-btns button');
-
-const iso = new Isotope( grid, {
-	itemSelector: '[data-portfolio-item]',
-	// layoutMode: 'fitRows',
-	layoutMode: 'masonry',
-  persentPosition: true,
-});
-
-
-buttons.forEach(btn => {
-  btn.addEventListener('click', ()=>{
-    buttons.forEach(btn => {
-      btn.classList.remove('activeBtn')
+window.addEventListener('load', () => {
+  const grid = document.querySelector('.grid-item');
+  const buttons = document.querySelectorAll('#portfolio-btns button');
+  
+  const iso = new Isotope( grid, {
+    itemSelector: '[data-portfolio-item]',
+    // layoutMode: 'fitRows',
+    layoutMode: 'masonry',
+    persentPosition: true,
+  });
+  
+  buttons.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+      buttons.forEach(btn => {
+        btn.classList.remove('activeBtn')
+      })
+  
+      btn.classList.add('activeBtn')
+      const selector = btn.dataset.filter
+      console.log(selector)
+  
+      iso.arrange({filter: selector})
     })
-
-    btn.classList.add('activeBtn')
-    const selector = btn.dataset.filter
-    console.log(selector)
-
-		iso.arrange({filter: selector})
   })
+  
 })
